@@ -1,0 +1,59 @@
+﻿<html lang="tr">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <title>TC Kimlik Sorgulama .:. Web Servis</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div>
+        <p> &nbsp; </p>
+        <h3> Request </h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Parametre Adı</th>
+                    <th scope="col">Değişken Türü</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>tcNo</td>
+                    <td>long</td>
+                </tr>
+                <tr>
+                    <td>ad</td>
+                    <td>string</td>
+                </tr>
+                <tr>
+                    <td>soyad</td>
+                    <td>string</td>
+                </tr>
+                <tr>
+                    <td>dogumYili</td>
+                    <td>int</td>
+                </tr>
+            </tbody>
+        </table>
+        <p> &nbsp; </p>
+        <h3> Web service <b>[POST]</b> </h3>
+        <ul class="list-group">
+            <li class="list-group-item">/Home/Sorgula?tcNo=12345678901&ad=Ali&soyad=Yılmaz&dogumYili=2000</li>
+        </ul>
+        <p> &nbsp; </p>
+        <h3> Response </h3>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th scope="row">true</th>
+                    <td>Böyle bir kişi var</td>
+                </tr>
+                <tr>
+                    <th scope="row">false</th>
+                    <td>Böyle bir kişi yok</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
